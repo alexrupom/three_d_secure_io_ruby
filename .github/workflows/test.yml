@@ -8,5 +8,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
+          bundler-cache: true
       - name: Run tests
-        run: rspec
+        run: bundle exec rspec
